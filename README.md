@@ -57,10 +57,10 @@ After viewing the file, you will be prompted to choose another file or quit the 
 Clone the repository from GitHub.
 git clone https://github.com/rubaM8/ruby-code.git
 Navigate to the project directory.
-
-cd rails-csv-reader
+bundle exec ruby start.rb
+or
 Install the required gems.
 bundle install
-or 
-bundle exec ruby start.rb
+ruby start.rb
+
 The application will start in the terminal, and you'll be prompted to select a CSV file to display.
