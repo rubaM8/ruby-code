@@ -45,15 +45,17 @@ Please choose a file to display:
 2. data2.csv
 3. Quit
 After selecting a file (e.g., data1.csv), the content will be displayed in a table:
+
 | Name   | Age  | Email               |
 |--------|------|---------------------|
 | John   | 28   | john@example.com     |
 | Sarah  | 22   | sarah@example.com    |
+
 After viewing the file, you will be prompted to choose another file or quit the application.
 
 ## Installation and Usage
 Clone the repository from GitHub.
-git clone https://github.com/rubaM8/rails-csv-reader.git
+git clone https://github.com/rubaM8/ruby-code.git
 Navigate to the project directory.
 
 cd rails-csv-reader
