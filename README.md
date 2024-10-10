@@ -48,8 +48,8 @@ After selecting a file (e.g., data1.csv), the content will be displayed in a tab
 
 | Name   | Age  | Email               |
 |--------|------|---------------------|
-| John   | 28   | john@example.com     |
-| Sarah  | 22   | sarah@example.com    |
+| ahmad   | 45   | ahmad@example.com     |
+| fatma  | 23   | fatma@example.com    |
 
 After viewing the file, you will be prompted to choose another file or quit the application.
 
