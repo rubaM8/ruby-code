@@ -1,66 +1,91 @@
-# 📊 Ruby on Rails CSV File Reader
-This is a Ruby code that reads CSV files and displays their content in a user-friendly table format in the console. The application utilizes the following Ruby gems:
-- csv (for handling CSV files)
-- tty-prompt (for user interaction and selection)
-- console_table (for displaying CSV data as tables)
+# 📚 Quiz App README
 
-## ✨Features
-Reads all CSV files from a directory.
-Displays a list of available CSV files in the console.
-Allows the user to select a file to view.
-Displays the content of the selected CSV file in a formatted table.
-Continues to prompt until the user selects the "Quit" option.
+Welcome to the **Quiz App**! This fun and interactive Rack-based web application is designed to test your knowledge on various topics, focusing on Palestinian culture, history, and cuisine. Let’s dive in!
 
-## 🛠️ Modules
-The project is divided into four modules for better code organization:
-### reader Module:
-Manages data fetching from the file system.
-### FileManager Module:
-Handles file operations.
-### fetcher Module:
-Responsible for reading and parsing CSV files.
-Uses Ruby's built-in CSV library to load and process CSV content.
-### Start Module:
-Main entry point of the application.
-Uses TTY-Prompt to create a user interface for selecting files and quitting the application.
-Displays the selected CSV content using ConsoleTable.
+## 📝 Table of Contents
 
-## 📦 Gems Required
-To run the project, ensure you have installed the following gems:
-* tty-prompt
-* console_table
-* csv
+1. [Features](#-features)
+2. [Installation](#-installation)
+3. [Usage](#-usage)
+4. [How It Works](#-how-it-works)
+5. [Questions](#-questions)
 
-## ⚙️ How It Works
-The Start module initializes the application and prompts the user to select a CSV file from the available list.
-The reader module reades the available CSV files.
-Once a file is selected, the fetcher module reads the contents of the CSV file.
-The contents are then displayed in the console in a table format using ConsoleTable.
-The user is prompted again to select another file or quit.
+## 🌟 Features
 
-#### Example Workflow
-On running the application, you will see a list of available CSV files:
-Please choose a file to display:
-1. data1.csv
-2. data2.csv
-3. Quit
-After selecting a file (e.g., data1.csv), the content will be displayed in a table:
+- **Interactive Quiz:** 🎉 Answer questions and see your score in real-time.
+- **Session Management:** 💾 Your progress is saved, allowing you to pick up right where you left off.
+- **Reset Option:** 🔄 Start fresh whenever you want by resetting your session.
+- **Dynamic Views:** 📊 Enjoy a responsive layout that presents questions, results, and error messages.
 
-| Name   | Age  | Email               |
-|--------|------|---------------------|
-| ahmad   | 45   | ahmad@example.com     |
-| fatma  | 23   | fatma@example.com    |
+## 🚀 Installation
 
-After viewing the file, you will be prompted to choose another file or quit the application.
+To set up the Quiz App on your local machine, follow these steps:
 
-## Installation and Usage
-Clone the repository from GitHub.
-git clone https://github.com/rubaM8/ruby-code.git
-Navigate to the project directory.
-bundle exec ruby start.rb
-or
-Install the required gems.
-bundle install
-ruby start.rb
+1. **Clone the repository:**
 
-The application will start in the terminal, and you'll be prompted to select a CSV file to display.
+   ```bash
+   git clone https://github.com/rubaM8/ruby-code.git
+   cd rackApp
+   ```
+
+2. **Install dependencies:**
+
+   Make sure you have Ruby and Rack installed. You can install them using:
+
+   ```bash
+   gem install rack erb
+   ```
+
+   or
+
+      ```bash
+   bundle install 
+   ```
+
+4. **Run the application:**
+
+   Start the Rack server:
+
+   ```bash
+   rackup -ilib
+   ```
+
+5. **Access the app:**
+
+   Open your web browser and go to `http://localhost:9292` to start quizzing yourself!
+
+## 🎮 Usage
+
+- **Take the Quiz:** 📝 Answer the questions presented one by one.
+- **View Your Score:** 📈 After answering all questions, you’ll receive your final score.
+- **Reset:** 🔄 If you want to retake the quiz, click the reset option.
+
+## 🔍 How It Works
+
+The Quiz App is built using Rack, which is a minimal, modular web server interface for Ruby. Here’s a quick overview of the main components:
+
+- **Session Management:** The application keeps track of your score and the current question index through sessions.
+- **Dynamic Question Loading:** Questions are loaded from an in-app array, providing a vibrant array of topics to explore.
+- **ERB Templates:** HTML views are dynamically generated using Embedded Ruby (ERB), making it easy to inject data into the HTML.
+
+## ❓ Questions
+
+The quiz includes questions such as:
+
+1. **What significant 2005 movement aimed to promote boycotts, divestment, and sanctions against Israel?**
+   - BDS Movement
+   - Oslo Accords
+   - PLO
+   - Intifada
+
+2. **What traditional dish, made with chicken, onions, and sumac, is considered a staple of Palestinian cuisine?**
+   - Musakhan
+   - Maqluba
+   - Mujadara
+   - Knafeh
+
+And many more that celebrate Palestinian heritage!
+
+---
+
+I hope you enjoy using the Quiz App and learn something new along the way! Happy quizzing! 🎉
